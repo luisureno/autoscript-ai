@@ -18,10 +18,4 @@ Get YouTube video transcripts and AI-powered summaries in one place.
 
 ---
 
-## Run locally
-
-### Backend
-
-1. From the project root:
-   cd backend
    
