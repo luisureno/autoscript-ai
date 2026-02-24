@@ -21,7 +21,7 @@ function App() {
   }
 
   const fetchTranscript = (_event: MouseEvent<HTMLButtonElement>) => {
-    const backendURL = `http://127.0.0.1:5000/api/transcript?${API_KEY_NAME}=${encodeURIComponent(url)}`
+    const backendURL = `https://autoscript-ai.onrender.com/api/transcript?${API_KEY_NAME}=${encodeURIComponent(url)}`
     fetch(backendURL)
     .then((res: Response) => res.json())
     .then(data => {
@@ -35,7 +35,7 @@ function App() {
   const handleSummarize = (_event: MouseEvent<HTMLButtonElement>) => {
     setIsSummarizing(true)
     const transcriptString = transcriptData.map((item) => item.text).join(" ")
-    const summarizeURL = `http://127.0.0.1:5000/api/summarize`
+    const summarizeURL = `https://autoscript-ai.onrender.com/api/summarize`
     fetch(summarizeURL, {
       method: 'POST',
       headers: {
