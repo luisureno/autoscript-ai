@@ -2,12 +2,6 @@
 
 Get YouTube video transcripts and AI-powered summaries in one place.
 
-## Live demo
-
-**[Try it here →]([Add your live link here])**
-
-*(Replace the link above with your deployed app URL when it's ready.)*
-
 ---
 
 ## Tech stack
