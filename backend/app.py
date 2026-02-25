@@ -47,23 +47,6 @@ def summarize_api():
     if not transcript:
         return jsonify({"error": "No trancript text provided in the request"}), 400
         
-        
-        # Test without API: set USE_MOCK_SUMMARY=1 in .env to return a fake summary
-    # if os.getenv("USE_MOCK_SUMMARY", "").lower() in ("1", "true", "yes"):
-    #     mock_summary = """**Executive summary:** This is a mock summary for testing without the Anthropic API. You can develop the frontend and Phase 5 markdown rendering.
-
-    #     ## Section 1: Getting Started
-    #     Content for the first section.
-
-    #     ## Section 2: Main Topics
-    #     Content for the second section.
-
-    #     ## Section 3: Takeaways
-    #     - First important takeaway.
-    #     - Second important takeaway.
-    #     - Third important takeaway.
-    #     """
-    #     return jsonify({"summary": mock_summary}), 200
 
 
     if not api_key:
@@ -93,5 +76,4 @@ def summarize_api():
 
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run()
